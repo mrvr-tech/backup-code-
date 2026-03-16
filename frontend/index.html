@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JBVP AI Agent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>JBVP AI Agent</h1>
+      <p class="subtitle">Notes, assignments, college info, and question papers.</p>
+
+      <section class="card">
+        <label for="feature">Feature</label>
+        <select id="feature">
+          <option value="chat">Student Chat</option>
+          <option value="notes/summarize">Notes AI (Summarize)</option>
+          <option value="assignment">Assignment AI</option>
+          <option value="college-info">College Info AI</option>
+          <option value="question-paper">Question Paper Generator</option>
+        </select>
+
+        <label for="message">Message / Topic</label>
+        <textarea id="message" rows="4" placeholder="Explain pharmacology unit 2"></textarea>
+
+        <button id="sendBtn">Send</button>
+      </section>
+
+      <section class="card">
+        <h2>Response</h2>
+        <pre id="output">Ready.</pre>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
